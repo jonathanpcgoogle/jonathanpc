@@ -10,8 +10,8 @@ else
     echo "Installing Falcon sensor..."
     sudo dpkg -i "$FALCON_PACKAGE"
     echo "Falcon is now installed."
-    sudo  /opt/CrowdStrike/falconctl -s --cid=1A4644FABBAF453F97A7B5FA956CC18D-38 -f
-    sudo  /opt/CrowdStrike/falconctl -s --tags="Mandiant_Consulting"
+    sudo  /opt/CrowdStrike/falconctl -s --cid=<Key> -f
+    sudo  /opt/CrowdStrike/falconctl -s --tags="<gTag>"
     echo "Falcon is now labeled"
 fi
 
